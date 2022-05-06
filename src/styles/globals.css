@@ -6,6 +6,10 @@ body {
   @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100;
 }
 
+.default-center {
+  @apply max-w-7xl w-full mx-auto;
+}
+
 .text-h-1 {
   @apply font-sans font-medium text-6xl text-zinc-900;
 }

@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header className="flex items-center text-zinc-900">
-      <div className="flex w-full max-w-6xl mx-auto mt-14 justify-between">
+      <div className="flex default-center mt-14 justify-between">
         <span className="text-4xl font-bold">ms.</span>
         <nav className="self-end ">
           <a className="text-navigation" href="#">
