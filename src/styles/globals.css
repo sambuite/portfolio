@@ -4,6 +4,15 @@
 
 body {
   @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  @apply text-white bg-indigo-600;
+}
+
+::selection {
+  @apply text-white bg-indigo-600;
 }
 
 .default-center {
@@ -18,12 +27,16 @@ body {
   @apply font-sans font-normal text-3xl text-zinc-600;
 }
 
+.text-title {
+  @apply font-body font-bold text-lg text-zinc-900;
+}
+
 .text-body {
-  @apply font-body font-normal text-lg text-zinc-900;
+  @apply font-body font-medium text-lg text-zinc-900;
 }
 
 .text-navigation {
-  @apply font-sans text-xl font-semibold ml-8 text-zinc-900;
+  @apply font-sans text-xl font-semibold ml-8 text-zinc-900 hover:text-indigo-700 transition-colors;
 }
 
 .text-sub-text {
@@ -31,5 +44,5 @@ body {
 }
 
 .text-sub-link {
-  @apply font-body font-medium text-lg text-zinc-900;
+  @apply font-body font-medium text-lg text-zinc-900 underline underline-offset-4 hover:text-indigo-700 transition-colors;
 }
