@@ -10,7 +10,7 @@ export function Footer() {
             Github
           </a>
           <a className="text-navigation" href="#">
-            Linkedin
+            LinkedIn
           </a>
         </nav>
       </div>
