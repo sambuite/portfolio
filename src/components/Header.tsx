@@ -1,17 +1,32 @@
-import { THEME_KEY } from '../utils/constants';
-
 export function Header() {
-  function toggleTheme() {
-    const themeMode = localStorage.getItem(THEME_KEY);
+  // function toggleTheme() {
+  //   const themeMode = localStorage.getItem(THEME_KEY);
 
-    if (themeMode === 'light') {
-      localStorage.setItem(THEME_KEY, 'dark');
-      document.documentElement.classList.add('dark');
-    } else {
-      localStorage.setItem(THEME_KEY, 'light');
-      document.documentElement.classList.remove('dark');
-    }
-  }
+  //   if (themeMode === 'light') {
+  //     localStorage.setItem(THEME_KEY, 'dark');
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     localStorage.setItem(THEME_KEY, 'light');
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // }
 
-  return <div />;
+  return (
+    <header className="flex items-center text-zinc-900">
+      <div className="flex w-full max-w-6xl mx-auto mt-14 justify-between">
+        <span className="text-4xl font-bold">ms.</span>
+        <nav className="self-end ">
+          <a className="text-xl font-semibold ml-8" href="#">
+            Projetos
+          </a>
+          <a className="text-xl font-semibold ml-8" href="#">
+            Sobre
+          </a>
+          <a className="text-xl font-semibold ml-8" href="#">
+            Contato
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
 }
