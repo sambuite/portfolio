@@ -6,10 +6,20 @@ export function Footer() {
           Murilo Sambuite - 2022
         </span>
         <nav className="self-end ">
-          <a className="text-navigation" href="#">
+          <a
+            className="text-navigation"
+            href="https://github.com/sambuite"
+            target="_blank"
+            rel="noreferrer"
+          >
             Github
           </a>
-          <a className="text-navigation" href="#">
+          <a
+            className="text-navigation"
+            href="https://www.linkedin.com/in/murilosambuite/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
         </nav>
