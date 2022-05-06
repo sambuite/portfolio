@@ -16,13 +16,13 @@ export function Header() {
       <div className="flex w-full max-w-6xl mx-auto mt-14 justify-between">
         <span className="text-4xl font-bold">ms.</span>
         <nav className="self-end ">
-          <a className="text-xl font-semibold ml-8" href="#">
+          <a className="text-navigation" href="#">
             Projetos
           </a>
-          <a className="text-xl font-semibold ml-8" href="#">
+          <a className="text-navigation" href="#">
             Sobre
           </a>
-          <a className="text-xl font-semibold ml-8" href="#">
+          <a className="text-navigation" href="#">
             Contato
           </a>
         </nav>

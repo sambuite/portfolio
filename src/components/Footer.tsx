@@ -6,10 +6,10 @@ export function Footer() {
           Murilo Sambuite - 2022
         </span>
         <nav className="self-end ">
-          <a className="text-xl font-semibold ml-8" href="#">
+          <a className="text-navigation" href="#">
             Github
           </a>
-          <a className="text-xl font-semibold ml-8" href="#">
+          <a className="text-navigation" href="#">
             Linkedin
           </a>
         </nav>
