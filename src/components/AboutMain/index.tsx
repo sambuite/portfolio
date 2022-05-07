@@ -13,7 +13,7 @@ export function AboutMain() {
           <h2 className="text-h-2 w-[40rem] mt-16 leading-10">
             Tenho aprendido programação por pouco mais de dois anos. Sempre
             foquei em frontend com ReactJs e Typescript. Ultimamente procuro
-            sobre backend buscando ser um profissional mais completo -
+            estudar sobre backend buscando ser um profissional mais completo -
             fullstack.{' '}
           </h2>
           <h2 className="text-h-2 w-[40rem] mt-8 leading-10">
