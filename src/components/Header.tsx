@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CONTACTS_ID, HEADER_ID, PROJECTS_ID } from '../utils/constants';
+import { CONTACTS_ID, HEADER_ID } from '../utils/constants';
 import { scrollToSection } from '../utils/scrollToSection';
 
 export function Header() {
@@ -25,12 +25,6 @@ export function Header() {
           </a>
           <a className="text-navigation">
             <Link href="/about">Sobre</Link>
-          </a>
-          <a
-            className="text-navigation cursor-pointer"
-            onClick={() => scrollToSection(PROJECTS_ID)}
-          >
-            Projetos
           </a>
           <a
             className="text-navigation cursor-pointer"
