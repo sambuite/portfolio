@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function scrollToProjects() {
   document
     .querySelector('#first-project')
@@ -28,8 +30,8 @@ export function Header() {
           >
             Projetos
           </a>
-          <a className="text-navigation" href="#">
-            Sobre
+          <a className="text-navigation">
+            <Link href="/about">Sobre</Link>
           </a>
           <a className="text-navigation" href="#">
             Contato
