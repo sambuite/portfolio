@@ -31,6 +31,7 @@ export function Project({
     <div
       id={id}
       className="flex justify-between border-b-[1.5px] border-zinc-600 first:mt-0 mt-28 pb-28"
+      data-aos="fade-up"
     >
       <div className="w-96 flex flex-col justify-between">
         <div className="flex flex-col ">

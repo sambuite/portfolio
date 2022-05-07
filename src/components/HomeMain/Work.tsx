@@ -1,6 +1,9 @@
 export function Work() {
   return (
-    <div className="default-center mt-28 pb-28 border-b-[1.5px] border-zinc-600 font-body">
+    <div
+      className="default-center mt-28 pb-28 border-b-[1.5px] border-zinc-600 font-body"
+      data-aos="fade-up"
+    >
       <ol className="relative border-l border-gray-200 ">
         <li className="ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border"></div>

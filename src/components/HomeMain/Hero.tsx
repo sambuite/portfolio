@@ -4,7 +4,7 @@ import { scrollToSection } from '../../utils/scrollToSection';
 
 export function Hero() {
   return (
-    <section className="flex flex-col default-center mt-56 ">
+    <section className="flex flex-col default-center mt-56" data-aos="fade-in">
       <div className="flex justify-between">
         <h1 className="text-h-1 whitespace-pre ">
           Olá, sou {'\n'}Murilo Sambuite.

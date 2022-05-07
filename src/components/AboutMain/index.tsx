@@ -4,7 +4,7 @@ import { Contact } from '../Contact';
 
 export function AboutMain() {
   return (
-    <main className="default-center mt-56">
+    <main className="default-center mt-56" data-aos="fade-in">
       <section className="flex items-center justify-between">
         <div className="mb-36">
           <h1 className="text-h-1 w-[26rem]">
@@ -33,7 +33,10 @@ export function AboutMain() {
           </div>
         </div>
       </section>
-      <section className="border-b-[1.5px] border-zinc-600 pb-28">
+      <section
+        className="border-b-[1.5px] border-zinc-600 pb-28"
+        data-aos="fade-up"
+      >
         <div className="flex items-center">
           <h6 className="text-body underline underline-offset-2 w-80">
             Principais ferramentas

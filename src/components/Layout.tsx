@@ -1,14 +1,24 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Head from 'next/head';
+import React, { useEffect } from 'react';
 import { BackToTopButton } from './BackToTopButton';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
 interface Props {
   title: string;
-  children: React.ReactNode;
+  children: React.ReactElement;
 }
 
 export function Layout({ title, children }: Props) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in',
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -16,7 +26,7 @@ export function Layout({ title, children }: Props) {
       </Head>
       <div>
         <Header />
-        {children}
+        {React.cloneElement(children, { 'data-aos': 'fade-in' })}
         <Footer />
       </div>
       <BackToTopButton />

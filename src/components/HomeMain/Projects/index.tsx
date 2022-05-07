@@ -50,7 +50,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section className="default-center flex flex-col mt-36">
+    <section className="default-center flex flex-col mt-36" data-aos="fade-in">
       {projects.map((project, index) => (
         <Project
           key={index}

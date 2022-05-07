@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { CONTACTS_ID, HEADER_ID } from '../utils/constants';
 import { scrollToSection } from '../utils/scrollToSection';
 
@@ -15,8 +16,14 @@ export function Header() {
   //   }
   // }
 
+  const { asPath } = useRouter();
+
   return (
-    <header id={HEADER_ID} className="flex items-center text-zinc-900">
+    <header
+      id={HEADER_ID}
+      className="flex items-center text-zinc-900"
+      data-aos={asPath === '/' ? 'fade-in' : undefined}
+    >
       <div className="flex default-center mt-14 justify-between">
         <span className="text-4xl font-bold">ms.</span>
         <nav className="self-end ">
