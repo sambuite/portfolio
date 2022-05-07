@@ -39,8 +39,8 @@ export function Project({
           {subText && <span className="text-sub-text mt-8">{subText}</span>}
         </div>
 
-        <a className="flex items-center text-sub-link">
-          <Link href={route?.url || link?.url || '/home'}>
+        <span className="flex items-center text-sub-link">
+          <Link href={route?.url || link?.url || '/home'} target="_blank">
             {route?.text || link?.text || 'Saiba mais'}
           </Link>
           {route ? (
@@ -48,7 +48,7 @@ export function Project({
           ) : (
             <ArrowUpRight className="w-5 h-5 ml-2" />
           )}
-        </a>
+        </span>
       </div>
       <div className="w-[46.875rem] h-[22.813rem] bg-zinc-400">
         {/* <Image
