@@ -20,7 +20,7 @@ export function Contact() {
         <a
           href="https://drive.google.com/file/d/1an9EGrvi1uYOwy5liMp-ACsJzf5Bjkrn/view"
           target="_blank"
-          className="font-body font-normal text-lg text-zinc-900 mt-7 hover:underline underline-offset-2"
+          className="font-body font-normal text-lg text-zinc-900 mt-7 underline underline-offset-2 hover:text-indigo-700 transition-colors"
           rel="noreferrer"
         >
           Ver currículo
