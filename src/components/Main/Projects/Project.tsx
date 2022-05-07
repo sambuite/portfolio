@@ -1,4 +1,4 @@
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'phosphor-react';
 
@@ -50,13 +50,15 @@ export function Project({
           )}
         </span>
       </div>
-      <div className="w-[46.875rem] h-[22.813rem] bg-zinc-400">
-        {/* <Image
-          src={imgCover}
-          alt={`Imagem do projeto ${name}`}
-          layout="responsive"
-          objectFit="contain"
-        /> */}
+      <div className="w-[46.875rem] h-[22.813rem] bg-zinc-400 border border-red-500 relative">
+        <div className="border border-blue-500 w-full h-full">
+          <Image
+            src={imgCover}
+            alt={`Imagem do projeto ${name}`}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
     </div>
   );
