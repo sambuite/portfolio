@@ -1,5 +1,6 @@
 import { ArrowDown } from 'phosphor-react';
-import { scrollToProjects } from '../Header';
+import { PROJECTS_ID } from '../../utils/constants';
+import { scrollToSection } from '../../utils/scrollToSection';
 
 export function Hero() {
   return (
@@ -15,7 +16,7 @@ export function Hero() {
       </div>
       <button
         type="button"
-        onClick={scrollToProjects}
+        onClick={() => scrollToSection(PROJECTS_ID)}
         className="h-fit w-fit cursor-pointer"
       >
         <ArrowDown className="w-9 h-9 mt-32 " weight="bold" />

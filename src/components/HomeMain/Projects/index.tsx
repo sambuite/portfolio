@@ -1,9 +1,9 @@
 import homeImg from '../../../assets/home.png';
+import { PROJECTS_ID } from '../../../utils/constants';
 import { Project } from './Project';
 
 const projects = [
   {
-    id: 'first-project',
     name: 'BQT - Big Queue Terminator',
     description:
       'Essa aplicação visa solucionar o problema das filas em orgãos públicos, possibilitando a marcação de horário antecipado.',
@@ -43,7 +43,7 @@ export function Projects() {
       {projects.map((project, index) => (
         <Project
           key={index}
-          id={index === 0 ? 'first-project' : undefined}
+          id={index === 0 ? PROJECTS_ID : undefined}
           name={`0${index + 1}/` + project.name}
           description={project.description}
           imgCover={project.imgCover}

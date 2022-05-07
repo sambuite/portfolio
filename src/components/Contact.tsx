@@ -1,8 +1,9 @@
 import { ArrowRight } from 'phosphor-react';
+import { CONTACTS_ID } from '../utils/constants';
 
 export function Contact() {
   return (
-    <div className="default-center flex my-28">
+    <div id={CONTACTS_ID} className="default-center flex my-28">
       <div className="flex flex-col items-start w-5/12">
         <h2 className="font-sans font-normal text-3xl text-zinc-900">
           Não posso esperar para responder
