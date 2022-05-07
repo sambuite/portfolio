@@ -20,18 +20,18 @@ export function Header() {
       <div className="flex default-center mt-14 justify-between">
         <span className="text-4xl font-bold">ms.</span>
         <nav className="self-end ">
-          <a className="text-navigation">
+          <span className="text-navigation">
             <Link href="/">Início</Link>
-          </a>
-          <a className="text-navigation">
+          </span>
+          <span className="text-navigation">
             <Link href="/about">Sobre</Link>
-          </a>
-          <a
+          </span>
+          <span
             className="text-navigation cursor-pointer"
             onClick={() => scrollToSection(CONTACTS_ID)}
           >
             Contato
-          </a>
+          </span>
         </nav>
       </div>
     </header>
