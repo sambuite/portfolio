@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight } from 'phosphor-react';
+import { ArrowUpRight, GithubLogo } from 'phosphor-react';
 
 interface Props {
   id?: string;
@@ -8,11 +8,11 @@ interface Props {
   description: string;
   imgCover: StaticImageData;
   subText?: string;
-  link?: {
+  liveLink?: {
     text: string;
     url: string;
   };
-  route?: {
+  codeLink: {
     text: string;
     url: string;
   };
@@ -23,8 +23,8 @@ export function Project({
   name,
   description,
   imgCover,
-  link,
-  route,
+  liveLink,
+  codeLink,
   subText,
 }: Props) {
   return (
@@ -39,19 +39,26 @@ export function Project({
           {subText && <span className="text-sub-text mt-8">{subText}</span>}
         </div>
 
-        <span className="flex items-center text-sub-link">
-          <Link href={route?.url || link?.url || '/home'} target="_blank">
-            {route?.text || link?.text || 'Saiba mais'}
-          </Link>
-          {route ? (
-            <ArrowRight className="w-5 h-5 ml-2" />
-          ) : (
-            <ArrowUpRight className="w-5 h-5 ml-2" />
+        <div className="">
+          <span className="flex items-center text-sub-link">
+            <Link href={codeLink.url} target="_blank">
+              {codeLink.text}
+            </Link>
+            <GithubLogo className="w-5 h-5 ml-2" weight="bold" />
+          </span>
+
+          {liveLink && (
+            <span className="flex items-center text-sub-link mt-4">
+              <Link href={liveLink.url} target="_blank">
+                {liveLink.text}
+              </Link>
+              <ArrowUpRight className="w-5 h-5 ml-2" weight="bold" />
+            </span>
           )}
-        </span>
+        </div>
       </div>
-      <div className="w-[46.875rem] h-[22.813rem] bg-zinc-400 border border-red-500 relative">
-        <div className="border border-blue-500 w-full h-full">
+      <div className="w-[47rem] h-[28.969rem] bg-zinc-200 relative border border-zinc-200">
+        <div className="w-full h-full">
           <Image
             src={imgCover}
             alt={`Imagem do projeto ${name}`}

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import homeImg from '../../assets/home.png';
+import meImg from '../../assets/me.jpeg';
 import { Contact } from '../Contact';
 
 export function AboutMain() {
@@ -25,7 +25,7 @@ export function AboutMain() {
         <div className="w-[27rem] h-[37rem] bg-zinc-400 relative">
           <div className="w-full h-full">
             <Image
-              src={homeImg}
+              src={meImg}
               alt={`Imagem de Murilo`}
               layout="fill"
               objectFit="cover"
