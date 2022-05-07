@@ -1,19 +1,10 @@
-import Head from 'next/head';
 import { AboutMain } from '../components/AboutMain';
-import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
+import { Layout } from '../components/Layout';
 
 export default function About() {
   return (
-    <>
-      <Head>
-        <title>Murilo Sambuite | Sobre</title>
-      </Head>
-      <div>
-        <Header />
-        <AboutMain />
-        <Footer />
-      </div>
-    </>
+    <Layout title="Murilo Sambuite | Sobre">
+      <AboutMain />
+    </Layout>
   );
 }
