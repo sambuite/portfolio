@@ -4,7 +4,7 @@ import { Project } from './Project';
 const projects = [
   {
     id: 'first-project',
-    name: '01/BQT - Big Queue Terminator',
+    name: 'BQT - Big Queue Terminator',
     description:
       'Essa aplicação visa solucionar o problema das filas em orgãos públicos, possibilitando a marcação de horário antecipado.',
     imgCover: homeImg,
@@ -16,7 +16,7 @@ const projects = [
       'Criado usando Typescript e muita coisa legal você nem acreditaria se eu te contasse é muito legal mesmo acredite em mim',
   },
   {
-    name: '02/Edit anywhere',
+    name: 'Edit anywhere',
     description: 'SAAS que permite a edição de videos direto do navegador',
     subText:
       'Criado usando Javascript e nem tanta coisa legal se eu contasse você acreditaria sim.',
@@ -27,7 +27,7 @@ const projects = [
     },
   },
   {
-    name: '03/Brower',
+    name: 'Brower',
     description: 'Apenas um browser escrito em Rust!',
     imgCover: homeImg,
     link: {
