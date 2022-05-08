@@ -20,7 +20,7 @@ body {
 }
 
 .text-h-1 {
-  @apply font-sans font-medium text-5xl xl:text-6xl text-zinc-900 dark:text-zinc-100;
+  @apply font-sans font-medium text-4xl sm:text-5xl xl:text-6xl text-zinc-900 dark:text-zinc-100;
 }
 
 .text-h-2 {
@@ -36,7 +36,7 @@ body {
 }
 
 .text-navigation {
-  @apply font-sans text-xl font-semibold ml-8 text-zinc-900 dark:text-zinc-100 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors;
+  @apply font-sans text-lg lg:text-xl font-semibold ml-8 text-zinc-900 dark:text-zinc-100 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors;
 }
 
 .text-sub-text {

@@ -4,8 +4,11 @@ import { scrollToSection } from '../../utils/scrollToSection';
 
 export function Hero() {
   return (
-    <section className="flex flex-col default-center mt-56" data-aos="fade-in">
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+    <section
+      className="flex flex-col default-center mt-40 lg:mt-56"
+      data-aos="fade-in"
+    >
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-between">
         <h1 className="text-h-1 whitespace-pre">
           Olá, sou {'\n'}Murilo Sambuite.
         </h1>

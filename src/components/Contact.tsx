@@ -2,13 +2,6 @@ import { ArrowDown, ArrowRight } from 'phosphor-react';
 import { CONTACTS_ID } from '../utils/constants';
 
 export function Contact() {
-  const width =
-    typeof window !== 'undefined'
-      ? window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth
-      : 0;
-
   return (
     <div
       id={CONTACTS_ID}
@@ -31,7 +24,7 @@ export function Contact() {
         <ArrowDown className="w-7 h-7 mt-5" weight="bold" />
       </div>
       <div className="flex flex-col items-center xl:items-start mx-auto mt-10 xl:mt-0">
-        <h2 className="font-sans font-normal text-3xl text-zinc-900 dark:text-zinc-100">
+        <h2 className="font-sans font-normal text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-100">
           murilosambuite@gmail.com
         </h2>
         <a
