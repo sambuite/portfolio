@@ -11,6 +11,7 @@ export function Header() {
       (localStorage.getItem(THEME_KEY) as any)) ||
       'light',
   );
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const { asPath } = useRouter();
 
@@ -27,9 +28,7 @@ export function Header() {
   }
 
   function toggleMenu() {
-    if (typeof window === 'undefined') return;
-    const menu = document.querySelector('#menu');
-    menu?.classList.toggle('h-44');
+    setMenuOpen((old) => !old);
   }
 
   useEffect(() => {
@@ -93,9 +92,17 @@ export function Header() {
 
       <div
         id="menu"
-        className="w-full h-0 transition-all ease-in duration-300 sm:hidden overflow-hidden"
+        className={
+          (menuOpen ? 'h-44' : 'h-0') +
+          ' w-full transition-all ease-in duration-300 sm:hidden overflow-hidden'
+        }
       >
-        <nav className="flex default-center h-0 mt-4 flex-col duration-300 ease-in sm:hidden">
+        <nav
+          className={
+            (menuOpen ? 'h-44' : 'h-0') +
+            ' flex default-center h-0 mt-4 flex-col duration-300 ease-in sm:hidden'
+          }
+        >
           <span className="font-sans text-lg lg:text-xl pb-2 font-semibold text-zinc-900 dark:text-zinc-100 active:text-indigo-700 dark:active:text-indigo-700 transition-colors border-b-2 border-zinc-500 w-full">
             <Link href="/">Início</Link>
           </span>
