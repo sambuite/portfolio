@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'Portfolio',
     description:
-      'Esse site que você está acessando agora, inspirado em um desihn minimalista. De pouco a pouco vem sendo atualizado e melhorado',
+      'Esse site que você está acessando agora, inspirado em um design minimalista. De pouco a pouco vem sendo atualizado e melhorado',
     imgCover: project1Img,
     codeLink: {
       text: 'Veja como foi construído',
