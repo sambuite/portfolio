@@ -24,13 +24,13 @@ export function Contact() {
         <ArrowDown className="w-7 h-7 mt-5" weight="bold" />
       </div>
       <div className="flex flex-col items-center xl:items-start mx-auto mt-10 xl:mt-0">
-        <h2 className="font-sans font-normal text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-100">
+        <h2 className="font-sans font-medium sm:font-normal text-lg sm:text-2xl lg:text-3xl text-zinc-900 dark:text-zinc-100">
           murilosambuite@gmail.com
         </h2>
         <a
           href="https://drive.google.com/file/d/1an9EGrvi1uYOwy5liMp-ACsJzf5Bjkrn/view"
           target="_blank"
-          className="font-body font-normal text-lg text-zinc-900 dark:text-zinc-100 mt-7 underline underline-offset-2 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors"
+          className="font-body font-normal text-base sm:text-lg text-zinc-900 dark:text-zinc-100 mt-7 underline underline-offset-2 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors"
           rel="noreferrer"
         >
           Ver currículo
