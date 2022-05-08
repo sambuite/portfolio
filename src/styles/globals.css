@@ -36,7 +36,7 @@ body {
 }
 
 .text-navigation {
-  @apply font-sans text-lg lg:text-xl font-semibold ml-8 text-zinc-900 dark:text-zinc-100 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors;
+  @apply font-sans text-lg lg:text-xl font-normal ml-8 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors;
 }
 
 .text-sub-text {

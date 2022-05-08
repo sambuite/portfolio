@@ -5,9 +5,9 @@ export function Footer() {
         <span className="text-lg xl:text-xl text-indigo-700 font-semibold">
           Murilo Sambuite - 2022
         </span>
-        <nav className=" ">
+        <nav>
           <a
-            className="text-navigation"
+            className="text-navigation text-zinc-900 dark:text-zinc-100"
             href="https://github.com/sambuite"
             target="_blank"
             rel="noreferrer"
@@ -15,7 +15,7 @@ export function Footer() {
             Github
           </a>
           <a
-            className="text-navigation"
+            className="text-navigation text-zinc-900 dark:text-zinc-100"
             href="https://www.linkedin.com/in/murilosambuite/"
             target="_blank"
             rel="noreferrer"

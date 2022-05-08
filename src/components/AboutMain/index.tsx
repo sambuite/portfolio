@@ -4,7 +4,7 @@ import { Contact } from '../Contact';
 
 export function AboutMain() {
   return (
-    <main className="default-center mt-56" data-aos="fade-in">
+    <main className="default-center mt-80" data-aos="fade-in">
       <section className="flex flex-col xl:flex-row items-center justify-center xl:justify-between">
         <div className="mb-36">
           <h1 className="text-h-1 xl:w-[26rem]">

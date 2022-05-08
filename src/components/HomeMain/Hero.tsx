@@ -5,7 +5,7 @@ import { scrollToSection } from '../../utils/scrollToSection';
 export function Hero() {
   return (
     <section
-      className="flex flex-col default-center mt-40 lg:mt-56"
+      className="flex flex-col default-center mt-40 lg:mt-80"
       data-aos="fade-in"
     >
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between">

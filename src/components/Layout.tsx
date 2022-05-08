@@ -2,7 +2,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import React, { useEffect } from 'react';
-import { BackToTopButton } from './BackToTopButton';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
@@ -29,7 +28,7 @@ export function Layout({ title, children }: Props) {
         {React.cloneElement(children, { 'data-aos': 'fade-in' })}
         <Footer />
       </div>
-      <BackToTopButton />
+      {/* <BackToTopButton /> */}
     </>
   );
 }
