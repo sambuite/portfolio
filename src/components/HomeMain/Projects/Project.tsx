@@ -58,7 +58,7 @@ export function Project({
           )}
         </div>
       </div>
-      <div className="w-[47rem] h-[28.969rem] bg-zinc-200 relative border border-zinc-200">
+      <div className="w-[47rem] h-[28.969rem] bg-zinc-200 dark:bg-zinc-800 relative border border-zinc-200 dark:border-zinc-800">
         <div className="w-full h-full">
           <Image
             src={imgCover}
