@@ -1,11 +1,11 @@
 export function Footer() {
   return (
-    <footer className="flex items-center text-zinc-900 mb-20">
-      <div className="flex default-center mt-14 justify-between">
-        <span className="text-xl text-indigo-700 font-semibold">
+    <footer className="flex items-center justify-center text-zinc-900 mb-20">
+      <div className="flex default-center items-center justify-center mt-14 xl:justify-between">
+        <span className="text-lg xl:text-xl text-indigo-700 font-semibold">
           Murilo Sambuite - 2022
         </span>
-        <nav className="self-end ">
+        <nav className=" ">
           <a
             className="text-navigation"
             href="https://github.com/sambuite"

@@ -5,32 +5,30 @@ import { Contact } from '../Contact';
 export function AboutMain() {
   return (
     <main className="default-center mt-56" data-aos="fade-in">
-      <section className="flex items-center justify-between">
+      <section className="flex flex-col xl:flex-row items-center xl:justify-between">
         <div className="mb-36">
-          <h1 className="text-h-1 w-[26rem]">
+          <h1 className="text-h-1 xl:w-[26rem]">
             Oi, sou Murilo Sambuite, desenvolvedor frontend.
           </h1>
-          <h2 className="text-h-2 w-[40rem] mt-16 leading-10">
+          <h2 className="text-h-2 xl:w-[40rem] mt-16 leading-10">
             Tenho aprendido programação por pouco mais de dois anos. Sempre
             foquei em frontend com ReactJs e Typescript. Ultimamente procuro
             estudar sobre backend buscando ser um profissional mais completo -
             fullstack.{' '}
           </h2>
-          <h2 className="text-h-2 w-[40rem] mt-8 leading-10">
+          <h2 className="text-h-2 xl:w-[40rem] mt-8 leading-10">
             Há alguns meses atrás tive meu primeiro emprego que durou um ano ⏤
             atualmente, estou procurando por uma oportunidade de demonstrar tudo
             que aprendi e estou aprendendo.
           </h2>
         </div>
-        <div className="w-[27rem] h-[37rem] bg-zinc-400 relative">
-          <div className="w-full h-full">
-            <Image
-              src={meImg}
-              alt={`Imagem de Murilo`}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+        <div className="w-full xl:w-[27rem] h-[37rem] mb-20 xl:mb-0 bg-zinc-400 relative">
+          <Image
+            src={meImg}
+            alt={`Imagem de Murilo`}
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </section>
       <section

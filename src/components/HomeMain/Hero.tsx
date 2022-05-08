@@ -5,11 +5,11 @@ import { scrollToSection } from '../../utils/scrollToSection';
 export function Hero() {
   return (
     <section className="flex flex-col default-center mt-56" data-aos="fade-in">
-      <div className="flex justify-between">
-        <h1 className="text-h-1 whitespace-pre ">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+        <h1 className="text-h-1 whitespace-pre">
           Olá, sou {'\n'}Murilo Sambuite.
         </h1>
-        <h2 className="h-fit self-end text-h-2 w-1/2">
+        <h2 className="h-fit self-end text-h-2 mt-11 xl:mt-0 lg:w-1/2">
           Um desenvolvedor frontend que busca criar interfaces precisas e
           performáticas.
         </h2>

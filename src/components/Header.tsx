@@ -7,7 +7,9 @@ import { scrollToSection } from '../utils/scrollToSection';
 
 export function Header() {
   const [themeMode, setThemeMode] = useState<'dark' | 'light'>(
-    (localStorage.getItem(THEME_KEY) as any) || 'light',
+    (typeof window !== 'undefined' &&
+      (localStorage.getItem(THEME_KEY) as any)) ||
+      'light',
   );
   const { asPath } = useRouter();
 
@@ -28,7 +30,7 @@ export function Header() {
       id={HEADER_ID}
       className="flex items-center text-zinc-900 dark:text-zinc-100"
     >
-      <div className="flex default-center mt-14 justify-between">
+      <div className="flex default-center items-center mt-14 justify-between">
         <span className="text-4xl font-bold">ms.</span>
         <div className="flex items-center self-end">
           <button type="button" className="w-8 h-8" onClick={toggleTheme}>
