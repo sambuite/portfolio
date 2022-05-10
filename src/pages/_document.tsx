@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta name="author" content="Murilo Sambuite" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preconnect"
