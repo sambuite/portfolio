@@ -92,20 +92,20 @@ export function Header() {
           <button
             type="button"
             className="w-8 h-8"
-            aria-label="Alternar entre tema"
+            aria-label="Alternar entre temas"
             onClick={toggleTheme}
           >
             {themeMode === 'dark' ? (
-              <Sun className="w-7 lg:w-8 h-7 lg:h-8 mr-8 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors" />
+              <Sun className="w-7 lg:w-8 h-7 lg:h-8 mr-8 hover:text-indigo-700 dark:hover:text-indigo-700" />
             ) : (
-              <Moon className="w-7 lg:w-8 h-7 lg:h-8 mr-8 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors" />
+              <Moon className="w-7 lg:w-8 h-7 lg:h-8 mr-8 hover:text-indigo-700 dark:hover:text-indigo-700" />
             )}
           </button>
           <button
             type="button"
             className="w-8 h-8 ml-4 block sm:hidden "
             onClick={toggleMenu}
-            onBlurCapture={toggleMenu}
+            onBlurCapture={() => menuOpen && toggleMenu()}
           >
             <List className="w-7 h-7 active:text-indigo-700 dark:active:text-indigo-700 transition-colors" />
           </button>
@@ -146,7 +146,7 @@ export function Header() {
         id="menu"
         className={
           (menuOpen ? 'h-44' : 'h-0') +
-          ' w-full transition-all ease-in duration-300 sm:hidden overflow-hidden ' +
+          ' w-full transition-[height] ease-in duration-300 sm:hidden overflow-hidden ' +
           (changeHeaderBgColor
             ? 'bg-zinc-900 dark:bg-zinc-800'
             : 'bg-zinc-100 dark:bg-zinc-900')
@@ -159,14 +159,14 @@ export function Header() {
             (changeHeaderBgColor ? 'text-zinc-100 ' : '')
           }
         >
-          <span className="font-sans text-lg lg:text-xl pb-2 font-semibold active:text-indigo-700 dark:active:text-indigo-700 transition-colors border-b-2 border-zinc-500 w-full">
+          <span className="font-sans text-lg lg:text-xl pb-2 font-semibold active:text-indigo-700 dark:active:text-indigo-700 border-b-2 border-zinc-500 w-full">
             <Link href="/">Início</Link>
           </span>
-          <span className="font-sans text-lg lg:text-xl pb-2 font-semibold mt-3 active:text-indigo-700 dark:active:text-indigo-700 transition-colors flex flex-col relative group border-b-2 border-zinc-500 w-full">
+          <span className="font-sans text-lg lg:text-xl pb-2 font-semibold mt-3 active:text-indigo-700 dark:active:text-indigo-700 flex flex-col relative group border-b-2 border-zinc-500 w-full">
             <Link href="/about">Sobre</Link>
           </span>
           <span
-            className="font-sans text-lg lg:text-xl pb-2  font-semibold mt-3 active:text-indigo-700 dark:active:text-indigo-700 transition-colors cursor-pointer border-b-2 border-zinc-500 w-full"
+            className="font-sans text-lg lg:text-xl pb-2  font-semibold mt-3 active:text-indigo-700 dark:active:text-indigo-700 cursor-pointer border-b-2 border-zinc-500 w-full"
             onClick={() => {
               scrollToSection(CONTACTS_ID);
               toggleMenu();
