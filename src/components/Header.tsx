@@ -2,16 +2,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { List, Moon, Sun } from 'phosphor-react';
 import { useEffect, useState } from 'react';
-import { CONTACTS_ID, HEADER_ID, THEME_KEY } from '../utils/constants';
+import { CONTACTS_ID, HEADER_ID } from '../utils/constants';
 import { scrollToSection } from '../utils/scrollToSection';
 
 export function Header() {
-  const [themeMode, setThemeMode] = useState<'dark' | 'light'>(
-    (typeof window !== 'undefined' &&
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ||
-        (localStorage.getItem(THEME_KEY) as any))) ||
-      'light',
-  );
+  const [themeMode, setThemeMode] = useState<'dark' | 'light'>(() => {
+    if (typeof window === 'undefined') return 'dark';
+    document.documentElement.classList.add('dark');
+    return 'dark';
+  });
   const [menuOpen, setMenuOpen] = useState(false);
   const [changeHeaderBgColor, setChangeHeaderBgColor] = useState(false);
   const [scrollDir, setScrollDir] = useState<'up' | 'down'>('up');
@@ -21,11 +20,9 @@ export function Header() {
 
   function toggleTheme() {
     if (themeMode === 'light') {
-      localStorage.setItem(THEME_KEY, 'dark');
       document.documentElement.classList.add('dark');
       setThemeMode('dark');
     } else {
-      localStorage.setItem(THEME_KEY, 'light');
       document.documentElement.classList.remove('dark');
       setThemeMode('light');
     }
