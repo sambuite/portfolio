@@ -17,7 +17,7 @@ export function AboutMain() {
             fullstack.{' '}
           </h2>
           <h2 className="text-h-2 xl:w-[40rem] mt-8 leading-10">
-            Há alguns meses atrás tive meu primeiro emprego que durou um ano ⏤
+            Há alguns meses atrás sai do meu primeiro emprego que durou um ano ⏤
             atualmente, estou procurando por uma oportunidade de demonstrar tudo
             que aprendi e estou aprendendo.
           </h2>

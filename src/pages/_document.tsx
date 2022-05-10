@@ -4,11 +4,20 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+        <meta
+          property="og:description"
+          content="Desenvolver Front-end | ReactJs e TypeScript"
+        />
+        <meta
+          property="og:title"
+          content="Portfolio | Murilo Sambuite - Frontend developer"
+        />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />
         <meta name="twitter:image" content="/ogimage.png" />
         <meta name="twitter:image:src" content="/ogimage.png" />
         <meta name="author" content="Murilo Sambuite" />
+        <meta name="theme-color" content="#4338ca" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preconnect"
