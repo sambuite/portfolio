@@ -20,6 +20,7 @@ export function Hero() {
       <button
         type="button"
         onClick={() => scrollToSection(PROJECTS_ID)}
+        aria-label="Ir para próxima seção"
         className="h-fit w-fit cursor-pointer"
       >
         <ArrowDown className="w-9 h-9 mt-32 " weight="bold" />

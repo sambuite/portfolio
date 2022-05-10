@@ -8,7 +8,8 @@ import { scrollToSection } from '../utils/scrollToSection';
 export function Header() {
   const [themeMode, setThemeMode] = useState<'dark' | 'light'>(
     (typeof window !== 'undefined' &&
-      (localStorage.getItem(THEME_KEY) as any)) ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ||
+        (localStorage.getItem(THEME_KEY) as any))) ||
       'light',
   );
   const [menuOpen, setMenuOpen] = useState(false);
@@ -91,7 +92,12 @@ export function Header() {
       >
         <span className="text-4xl font-bold">ms.</span>
         <div className="flex items-center self-end">
-          <button type="button" className="w-8 h-8" onClick={toggleTheme}>
+          <button
+            type="button"
+            className="w-8 h-8"
+            aria-label="Alternar entre tema"
+            onClick={toggleTheme}
+          >
             {themeMode === 'dark' ? (
               <Sun className="w-7 lg:w-8 h-7 lg:h-8 mr-8 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors" />
             ) : (

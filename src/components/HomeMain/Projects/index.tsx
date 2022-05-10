@@ -41,7 +41,7 @@ const projects = [
       'O server fake é gerado pelo MirageJS, os dados são gerados pelo FakerJs e consumidos pelo Axios juntamente com React Query. Os gráficos são feitos com o React Apexcharts e na criação de usuário são usados o React hook form para o formulário e o Yup para validação de dados.',
     imgCover: project3Img,
     codeLink: {
-      text: 'Mais informações',
+      text: 'Acessar repositório',
       url: 'https://github.com/sambuite/dashgo',
     },
     liveLink: undefined,
