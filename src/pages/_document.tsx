@@ -6,11 +6,11 @@ export default function Document() {
       <Head>
         <meta
           property="og:description"
-          content="Desenvolver Front-end | ReactJs e TypeScript"
+          content="Desenvolvedor de software | ReactJs & React Native & NodeJS & TypeScript"
         />
         <meta
           property="og:title"
-          content="Portfolio | Murilo Sambuite - Frontend developer"
+          content="Portfolio | Murilo Sambuite - Desenvolvedor de software"
         />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />

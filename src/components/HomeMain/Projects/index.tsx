@@ -1,6 +1,7 @@
 import project1Img from '../../../assets/project-01.png';
 import project2Img from '../../../assets/project-02.png';
 import project3Img from '../../../assets/project-03.png';
+import project4Img from '../../../assets/project-04.png';
 import { PROJECTS_ID } from '../../../utils/constants';
 import { Project } from './Project';
 
@@ -45,6 +46,20 @@ const projects = [
       url: 'https://github.com/sambuite/dashgo',
     },
     liveLink: undefined,
+  },
+  {
+    name: 'Pale Boreal Dark Theme',
+    description:
+      'Gosto de temas mais escuros que o normal e quase sem bordas, como não encontrei um que gostasse fiz esse tema para o VSCode.',
+    imgCover: project4Img,
+    codeLink: {
+      text: 'Acessar repositório',
+      url: 'https://github.com/sambuite/pale-boreal-dark-theme',
+    },
+    liveLink: {
+      text: 'Baixar o tema',
+      url: 'https://marketplace.visualstudio.com/items?itemName=MuriloSambuite.pale-boreal-dark-theme',
+    },
   },
 ];
 

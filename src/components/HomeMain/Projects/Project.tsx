@@ -38,7 +38,6 @@ export function Project({
     <div
       id={id}
       className="flex flex-col xl:flex-row justify-start xl:justify-between border-b-[1.5px] border-zinc-600 first:mt-0 mt-28 pb-28"
-      // data-aos="fade-up"
     >
       <div className="w-full xl:w-96 flex flex-col justify-between">
         <div className="flex flex-col">
@@ -49,16 +48,16 @@ export function Project({
 
         <div className="">
           <span className="flex items-center text-sub-link mt-8 xl:mt-0">
-            <Link href={codeLink.url} target="_blank">
-              {codeLink.text}
+            <Link href={codeLink.url}>
+              <a target="_blank">{codeLink.text}</a>
             </Link>
             <GithubLogo className="w-5 h-5 ml-2" weight="bold" />
           </span>
 
           {liveLink && (
             <span className="flex items-center text-sub-link mt-4">
-              <Link href={liveLink.url} target="_blank">
-                {liveLink.text}
+              <Link href={liveLink.url}>
+                <a target="_blank">{liveLink.text}</a>
               </Link>
               <ArrowUpRight className="w-5 h-5 ml-2" weight="bold" />
             </span>

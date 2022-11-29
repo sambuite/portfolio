@@ -13,8 +13,8 @@ export function Hero() {
           Olá, sou {'\n'}Murilo Sambuite.
         </h1>
         <h2 className="h-fit self-end text-h-2 mt-11 xl:mt-0 lg:w-1/2">
-          Um desenvolvedor frontend que busca criar interfaces precisas e
-          performáticas.
+          Um desenvolvedor de software que busca criar interfaces precisas e
+          soluções performáticas.
         </h2>
       </div>
       <button

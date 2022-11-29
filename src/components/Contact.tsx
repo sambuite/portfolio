@@ -28,7 +28,7 @@ export function Contact() {
           murilosambuite@gmail.com
         </h2>
         <a
-          href="https://drive.google.com/file/d/1an9EGrvi1uYOwy5liMp-ACsJzf5Bjkrn/view"
+          href="https://drive.google.com/file/d/1fdMAWKxtQYruS9-LqtIOqiCnDDkyhDvV/view?usp=sharing"
           target="_blank"
           className="font-body font-normal text-base sm:text-lg text-zinc-900 dark:text-zinc-100 mt-7 underline underline-offset-2 hover:text-indigo-700 dark:hover:text-indigo-700 transition-colors"
           rel="noreferrer"
