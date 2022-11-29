@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <meta
           name="description"
-          content="Me chamo Murilo Sambuite, sou um desenvolvedor de software. Foco em criar aplicações modernas, performáticas e responsivas, seguindo as melhores práticas e com a melhor experiência de usuário possível. Utilizo principalmente React Js, NodeJS e TypeScript no desenvolvimento."
+          content="Me chamo Murilo Sambuite, sou um desenvolvedor de software(front-end, back-end e mobile). Minha stack é ReactJs, React Native, NodeJS e TypeScript no desenvolvimento. Crio aplicações responsivas e performáticas, seguindo boas práticas e com a melhor experiência de usuário(UX) possível. "
         />
         <meta
           name="keywords"

@@ -8,7 +8,7 @@ export default function About() {
       <Head>
         <meta
           name="description"
-          content="Informações sobre a carreira, experiência e conhecimento em ferramentas e tecnologias de Murilo Sambuite."
+          content="Portfólio profissional de Murilo Sambuite. Desenvolvedor React Js, React Native, NodeJS, Javascript e Typescript"
         />
         <meta
           name="keywords"
