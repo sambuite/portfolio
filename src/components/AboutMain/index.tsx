@@ -8,7 +8,7 @@ export function AboutMain() {
       <section className="flex flex-col xl:flex-row items-center justify-center xl:justify-between">
         <div className="mb-36">
           <h1 className="text-h-1 xl:w-[26rem]">
-            Oi, sou Murilo Sambuite, desenvolvedor frontend.
+            Oi, sou Murilo Sambuite, desenvolvedor de software.
           </h1>
 
           <h2 className="text-h-2 xl:w-[40rem] mt-16 leading-10">
