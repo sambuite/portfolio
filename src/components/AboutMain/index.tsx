@@ -10,16 +10,24 @@ export function AboutMain() {
           <h1 className="text-h-1 xl:w-[26rem]">
             Oi, sou Murilo Sambuite, desenvolvedor frontend.
           </h1>
+
           <h2 className="text-h-2 xl:w-[40rem] mt-16 leading-10">
-            Tenho aprendido programação por pouco mais de dois anos. Sempre
-            foquei em frontend com ReactJs e Typescript. Ultimamente procuro
-            estudar sobre backend buscando ser um profissional mais completo -
-            fullstack.{' '}
+            Sou desenvolvedor de software, atuo profissionalmente desde 2020,
+            meu foco inicial na carreira era me tornar um desenvolvedor
+            front-end, e consegui no meu primeiro emprego desenvolver em ReactJs
+            e aprender mais sobre React Native.{' '}
           </h2>
           <h2 className="text-h-2 xl:w-[40rem] mt-8 leading-10">
-            Há alguns meses atrás sai do meu primeiro emprego que durou um ano ⏤
-            atualmente, estou procurando por uma oportunidade de demonstrar tudo
-            que aprendi e estou aprendendo.
+            No meu emprego mais recente, tive a oportunidade de fortalecer esses
+            conhecimentos bem como aprender mais sobre outros tópicos como BFF,
+            Storybook e testes automatizados, além de surgir novos interesses
+            como por Arquitetura de Software, UX(User Experience), C# .NET e
+            tudo relacionado a performance.
+          </h2>
+          <h2 className="text-h-2 xl:w-[40rem] mt-8 leading-10">
+            Atualmente, como já tenho uma boa base de front-end e mobile, meu
+            foco nos estudos é no back-end, venho estudando Node JS mas
+            eventualmente pretendo aprender mais sobre C# e Ruby.
           </h2>
         </div>
         <div className="w-full xl:w-[27rem] h-[37rem] mb-20 xl:mb-0 bg-zinc-400 relative">
@@ -48,8 +56,9 @@ export function AboutMain() {
             Principais tecnologias
           </h6>
           <span className="w-[27rem] font-body">
-            JavaScript, TypeScript, Git, ReactJs, React Native, TailwindCSS,
-            Styled Components, Express, NodeJs, Prisma, Jest
+            JavaScript, TypeScript, ReactJs, React Native, TailwindCSS, Styled
+            Components, Material UI, Storybook, Git, GraphQL, Express, NodeJs,
+            Prisma, Jest
           </span>
         </div>
       </section>

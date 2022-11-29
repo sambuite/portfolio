@@ -24,7 +24,7 @@ body {
 }
 
 .text-h-2 {
-  @apply font-sans font-normal text-2xl xl:text-3xl text-zinc-600 dark:text-zinc-400;
+  @apply font-sans font-normal text-2xl text-zinc-600 dark:text-zinc-400;
 }
 
 .text-title {
